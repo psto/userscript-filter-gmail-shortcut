@@ -1,0 +1,30 @@
+{
+  "name": "userscript-filter-gmail-shortcut",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Filter Gmail messages by pressing \"alt+g\"",
+  "author": "Piotr Stojanow <piotrstojanow@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@9.1.3",
+  "homepage": "https://github.com/psto/userscript-filter-gmail-shortcut",
+  "bugs": "https://github.com/psto/userscript-filter-gmail-shortcut/issues",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "release": "bumpp -x \"node bump.js\" --all"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.19.1",
+    "bumpp": "^9.4.1",
+    "eslint": "^9.3.0",
+    "lint-staged": "^15.2.5",
+    "pnpm": "^9.1.3",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
