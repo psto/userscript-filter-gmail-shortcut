@@ -21,7 +21,7 @@
       const emailElements = main.querySelectorAll('tr')
 
       // Filter out selected email rows
-      const selectedEmailRows = Array.from(emailElements).filter((row) => {
+      let selectedEmailRows = Array.from(emailElements).filter((row) => {
         const tdElements = row.querySelectorAll('td');
 
         const hasAriaChecked = Array.from(tdElements).some((td) => {
@@ -36,6 +36,11 @@
 
         return hasAriaChecked && hasEmailSpan;
       });
+
+      // When filtering from an opened email, select the element containing the email
+      if (selectedEmailRows.length === 0) {
+        selectedEmailRows.push(emailElements[1])
+      }
 
       let emails = []
 
