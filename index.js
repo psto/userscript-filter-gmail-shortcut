@@ -37,6 +37,11 @@
         return hasAriaChecked && hasEmailSpan;
       });
 
+      // When filtering from an opened email, select the element containing the email
+      if (selectedEmailRows.length === 0) {
+        selectedEmailRows = [emailElements[1]]
+      }
+
       let emails = []
 
       // Extract email addresses from the selected rows
