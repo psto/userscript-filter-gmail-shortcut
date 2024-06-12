@@ -1,7 +1,7 @@
 {
   "name": "userscript-filter-gmail-shortcut",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Filter Gmail messages by pressing \"alt+g\"",
   "author": "Piotr Stojanow <piotrstojanow@gmail.com>",
   "license": "MIT",

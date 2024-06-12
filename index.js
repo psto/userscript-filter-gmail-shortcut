@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Filter Gmail shortcut
 // @namespace    https://stojanow.com/
-// @version      0.1.0
+// @version      0.2.0
 // @description  Filter Gmail messages by pressing \"alt+g\"
 // @author       Piotr Stojanow (https://github.com/psto/)
 // @license      MIT
